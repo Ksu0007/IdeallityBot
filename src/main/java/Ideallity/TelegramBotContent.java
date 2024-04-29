@@ -1,4 +1,4 @@
-package org.example;
+package Ideallity;
 
 public class TelegramBotContent {
     public static final String STEP_1_TEXT = """

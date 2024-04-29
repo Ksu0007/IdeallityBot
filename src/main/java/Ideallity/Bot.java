@@ -13,7 +13,7 @@ import java.util.Map;
 import static Ideallity.IdeallityBotUtils.createMessage;
 import static Ideallity.IdeallityBotUtils.createPhotoMessage;
 import static Ideallity.IdeallityBotUtils.*;
-import static org.example.TelegramBotContent.*;
+import static Ideallity.TelegramBotContent.*;
 
 
 public class Bot extends TelegramLongPollingBot {
@@ -119,7 +119,7 @@ public class Bot extends TelegramLongPollingBot {
                         user.setNormalWeight(normalWeight);
                         String compareMessage = compareWeight(normalWeight, user.getIdealWeight());
                         sendMessage(chatId, "Your normal weight is " + normalWeight + " kg. " + compareMessage
-                                + "Please enter your real weight.");
+                                + " Please enter your real weight.");
                         user.setBotState(BotState.ASK_REAL_WEIGHT);
                     }
                 }
@@ -203,10 +203,10 @@ public class Bot extends TelegramLongPollingBot {
                 }
                 break;
             case FINISH:
-                // Handle finish state if needed
+
                 break;
             default:
-                // Handle default state if needed
+
                 break;
         }
     }
